@@ -1,0 +1,104 @@
+.header {
+    text-align: center;
+}
+
+footer{
+  text-align: justify;
+  font-size: large;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  background-image: url('file:///E:/test0/assets/bg.jpg'); /* Full file path */
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0; /* Removes default margin */
+  height: 100vh; /* Makes the body take up the full viewport height */
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between; /* Space between the boxes */
+  align-items: flex-start; /* Aligns the boxes at the top */
+  flex-wrap: wrap; /* Allows the boxes to wrap if needed */
+  gap: 20px; /* Space between the boxes */
+  padding: 20px; /* Adds space around the content */
+  width: 100%;
+}
+
+nav {
+  display: flex; /* Aligns the nav items in a row */
+  gap: 50px; /* Adds space between nav items */
+}
+
+.box {
+  background: linear-gradient(135deg, rgba(0, 180, 255, 0.5), rgba(255, 0, 0, 0.5)); /* Gradient with transparency */
+  color: white; /* White text for good contrast */
+  padding: 50px; /* Padding to make the box larger */
+  border-radius: 20px; /* Rounded corners for a smoother look */
+  max-width: 250px; /* Set max width to keep boxes from getting too wide */
+  min-width: 100px; /* Set min width to ensure boxes don't become too small */
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow for emphasis */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+ul li a {
+  font-size: 1.25em;
+  color:white;
+  padding: 10px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.3); 
+  border-radius: 10px;
+}
+
+.top-right-link {
+  position: fixed; /* Fixes the element in place */
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  color: white; /* White text for contrast */
+  padding: 5px 15px; /* Adds padding to make it a button */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1em; /* Sets the font size */
+  text-decoration: none; /* Removes underlines */ 
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: rgba(88, 238, 230, 0.158);
+  color: rgba(255, 255, 255, 0.897); /* Black text color */
+  padding: 10px 0;
+  position: relative;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%; /* Start off-screen */
+  animation: marquee 10s linear infinite;
+  font-size: 200%; /* Increase font size */
+  line-height: 0.8; /* Adjust line spacing for large text */
+  font-weight: bold; /* Make it bold for emphasis */
+}
+  
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+
