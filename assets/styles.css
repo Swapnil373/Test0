@@ -9,7 +9,7 @@ footer{
 }
 
 body {
-  background-image: url('assets/bg.jpg'); /* Full file path */
+  background-image: url('file:///assets/bg.jpg'); /* Full file path */
   background-size: 100%;
   background-position: center;
   background-attachment: fixed;
